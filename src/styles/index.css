@@ -5,7 +5,7 @@ body {
 .container {
     background: #fff;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 30px;
     min-height: 100vh;
@@ -21,11 +21,11 @@ div.logo, div.menu {
 }
 
 div.logo {
-    width: 50%;
+    width: 40%;
 }
 
 div.menu {
-    width: 50%;
+    width: 60%;
     text-align: right;
 }
 
@@ -49,8 +49,8 @@ div.menu {
 }
 
 
-.hero p {
-    margin-top: 5px;
+.hero h2 {
+    text-transform: capitalize;
 }
 
 .categories a, .trending a {

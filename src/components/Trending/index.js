@@ -22,7 +22,7 @@ function Trending() {
                    trending && trending.map(function(item){
                        return (
                            <li key={item.id}>
-                               <Link to={`post/${item.slug}`}>{item.title}</Link>
+                               <Link to={`/post/${item.slug}`}>{item.title}</Link>
                            </li>
                        )
                    })

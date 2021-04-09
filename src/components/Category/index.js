@@ -16,13 +16,12 @@ function Category() {
 
     return (
         <div className="categories">
-            <h4>Categories</h4>
             <ul>
                {
                    categories && categories.map(function(item){
                        return (
                            <li key={item.id}>
-                               <Link to={`categories/${item.slug}`}>{item.name}</Link>
+                               <Link to={`/category/${item.slug}`}>{item.name}</Link>
                            </li>
                        )
                    })

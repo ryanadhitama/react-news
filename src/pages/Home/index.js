@@ -7,6 +7,7 @@ function Home() {
         <div>
             <Hero name="Welcome to My Blog"/>
             <Trending/>
+            <h4>Categories</h4>
             <Category/>
             <br/>
         </div>

@@ -5,6 +5,7 @@ function Categories() {
     return (
         <div>
             <Hero name="All Categories"/>
+            <h4>Categories</h4>
             <Category/>
             <br/>
         </div>
