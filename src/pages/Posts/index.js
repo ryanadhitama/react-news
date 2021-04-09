@@ -1,7 +1,12 @@
+import Hero from "../../components/Hero";
+import Post from "../../components/Post";
+
 function Posts() {
     return (
         <div>
-            Posts
+            <Hero name="All Posts"/>
+            <Post/>
+            <br/>
         </div>
     )
 }

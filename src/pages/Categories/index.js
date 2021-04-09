@@ -1,7 +1,12 @@
+import Category from "../../components/Category";
+import Hero from "../../components/Hero";
+
 function Categories() {
     return (
         <div>
-            Categories
+            <Hero name="All Categories"/>
+            <Category/>
+            <br/>
         </div>
     )
 }
