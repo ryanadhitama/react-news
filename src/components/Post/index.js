@@ -7,12 +7,17 @@ function Post(props) {
 
     useEffect(() => {
         let category = ""
+        let trending = ""
 
         if (props.category != undefined) {
             category = `?category=${props.category}`
         }
 
-        axios.get(process.env.REACT_APP_API_URL+'/posts'+category)
+        if (props.trending != undefined) {
+            trending = `?type=trending&take=3`
+        }
+
+        axios.get(process.env.REACT_APP_API_URL+'/posts'+category+trending)
         .then(res => {
             const data = res.data.data;
             setPost(data);
