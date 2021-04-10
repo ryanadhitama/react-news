@@ -16,28 +16,37 @@ body {
     clear: both;
 }
 
-div.logo, div.menu {
-    display: inline-block;
+
+
+@media screen and (min-width: 768px) {
+    div.logo, div.menu {
+        display: inline-block;
+    }
+    
+    div.logo {
+        width: 40%;
+    }
+    
+    div.menu {
+        width: 60%;
+        text-align: right;
+    }
 }
 
-div.logo {
-    width: 40%;
-}
-
-div.menu {
-    width: 60%;
-    text-align: right;
+.menu ul {
+    padding-left: 0px;
 }
 
 .menu ul li {
     display: inline-block;
     list-style: none;
+    
 }
 
 .menu ul li a {
     color: #222;
     display: block;
-    padding: 0 8px;
+    padding: 0 16px 0 0;
 }
 
 

@@ -9,11 +9,11 @@ function Post(props) {
         let category = ""
         let trending = ""
 
-        if (props.category != undefined) {
+        if (props.category !== undefined) {
             category = `?category=${props.category}`
         }
 
-        if (props.trending != undefined) {
+        if (props.trending !== undefined) {
             trending = `?type=trending&take=3`
         }
 
@@ -22,7 +22,7 @@ function Post(props) {
             const data = res.data.data;
             setPost(data);
         })
-    }, [])
+    }, [props])
 
     return (
         <div className="trending">
@@ -34,8 +34,8 @@ function Post(props) {
                                <Link to={`/post/${item.slug}`}>{item.title}</Link>
                            </li>
                        )
-                   })
-               }
+                   }) 
+               } 
               
             </ul>
         </div>
